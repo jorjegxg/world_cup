@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace WC2022
 {
-    internal class WorldCup
+    internal class WorldCup : GroupTypeCompetition
     {
+        string[] participantCountries;
+        public WorldCup(string name, int numberOfTeams, int numberOfGroups, string[] _participantCountries) : base(name, numberOfTeams, numberOfGroups)
+        {
+            participantCountries = _participantCountries;
+        }
     }
 }
